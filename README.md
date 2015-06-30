@@ -9,22 +9,24 @@ PimSched helps you study foreign vocabulary by converting lists of vocabulary/tr
 * ./PimSched.py to run
 
 **Command-line arguments**
-PimSched.py language1 language2 wordlist [-o outputpath]
 
-Required: language1: ISO-abbreviation(English=en, German=de, etc) of language of idioms on the left side of the "="
-Required: language2: ISO-abbreviation(English=en, German=de, etc) of language of idioms on the right side of the "="
-Required: wordlist: path to vocabularylist, a file with idioms and translations, separated by "="
-Optional: outputpath: Path specifying where the MP3-audiolesson should be stored. Default: ./result.mp3
+*PimSched.py language1 language2 wordlist [-o outputpath]*  
 
-Examples:
+**Required**: *language1*: ISO-abbreviation(English=en, German=de, etc) of language of idioms on the left side of the "="  
+**Required**: *language2*: ISO-abbreviation(English=en, German=de, etc) of language of idioms on the right side of the "="  
+**Required**: *wordlist*: path to vocabularylist, a file with idioms and translations, separated by "="  
+**Optional**: outputpath: Path specifying where the MP3-audiolesson should be stored. Default: ./result.mp3
+
+For example:
 * ./PimSched.py en fr /path/to/wordlist.txt
 * ./PimSched.py en fr /path/to/wordlist.txt -o ~/French/chapter5.mp3
 
 
-**Dependencies**
-Python2
+**Dependencies**  
+* Python2
 
 All other dependencies are already included for your convenience
+
 **Information for experienced Linux-users**
 
 If a library is also installed somewhere in your PYTHONPATH, PimSched will use that version; if not, PimSched will fall back to the included library. The included dependencies are located in the included_libraries folder; you can remove that folder if the libraries PimSched requires are installed into your PYTHONPATH. PimSched requires the following libraries:
